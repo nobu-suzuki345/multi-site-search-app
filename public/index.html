@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Custom Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="background-shapes"></div>
+    <div class="container">
+        <header>
+            <h1>Google Custom Search</h1>
+            <p class="subtitle">複数サイトを横断して、知りたい情報を一括検索</p>
+        </header>
+        
+        <main>
+            <div class="search-wrapper">
+                <div class="site-filters">
+                    <label class="filter-tag"><input type="checkbox" name="site" value="qiita.com"><span><i class="fab fa-searchengin"></i> Qiita</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="linkedin.com"><span><i class="fab fa-linkedin"></i> LinkedIn</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="x.com"><span><i class="fab fa-x-twitter"></i> X</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="instagram.com"><span><i class="fab fa-instagram"></i> Instagram</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="zenn.dev"><span><i class="fas fa-code"></i> Zenn</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="note.com"><span><i class="fas fa-book-open"></i> note</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="stackoverflow.com"><span><i class="fab fa-stack-overflow"></i> Stack Overflow</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="github.com"><span><i class="fab fa-github"></i> GitHub</span></label>
+                    <label class="filter-tag"><input type="checkbox" name="site" value="wikipedia.org"><span><i class="fab fa-wikipedia-w"></i> Wikipedia</span></label>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="キーワードを入力して検索...">
+                    <button id="searchButton">検索</button>
+                </div>
+            </div>
+            
+            <div class="results-section" id="results">
+                <!-- 検索結果がここに表示されます -->
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
